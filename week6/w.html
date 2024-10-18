@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The HTML5 Way</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-areas: 
+                "header header"
+                "nav main"
+                "aside main"
+                "footer footer";
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto;
+            gap: 10px;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #e2e2e2;
+            padding: 10px;
+        }
+
+        main {
+            grid-area: main;
+            background-color: #d1e7dd;
+            padding: 10px;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: #f8d7da;
+            padding: 10px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Pham Thi Khanh Linh</h1>
+    </header>
+
+    <nav>
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Main Content</h2>
+        <p>This is the main area of the content where articles or information will be displayed.</p>
+    </main>
+
+    <aside>
+        <h2>Article</h2>
+        <p>This section contains additional information, links, or advertisements related to the main content.</p>
+    </aside>
+
+    <footer>
+        <h2>Thanks for watching this !</h2>
+     
+    </footer>
+</body>
+
+</html>
